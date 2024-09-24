@@ -1,5 +1,11 @@
-.custom-font{
-    font-family: 'Papyrus', serif;
-    color:#001f3f;
-  }
-  
+.custom-font-1 {
+  font-family: "Papyrus", serif;
+  color: #001f3f;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.custom-font-2 {
+  font-family: "Papyrus", serif;
+  color: #001f3f;
+}

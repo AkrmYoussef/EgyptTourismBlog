@@ -74,6 +74,13 @@
 
 }
 
+.img-post{
+    width: 200px;
+    height: 160px;
+    object-fit: cover;
+    padding-right: 100px;
+}
+
 .footer {
     grid-area: ft;
     width: auto;
@@ -81,6 +88,19 @@
     color: white;
     margin-top: 5px;
 
+}
+.figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+    padding-right: 20px;
+
+}
+
+.figcaption {
+    font-size: 18px;
+    color: #666666;
+    text-align: center;
 }
 
 /* mobile devices) */

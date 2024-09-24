@@ -22,7 +22,21 @@
   background-color: whitesmoke;
 }
 
+
+.author {
+  grid-area: a;
+}
+
 .box {
+  background-color: whitesmoke;
+  line-height: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  word-spacing: 0.4px;
+  max-width: 100%; /* Ensure it doesn't overflow */
+}
+
+.box2{
   display: flex;
   background-color: whitesmoke;
   line-height: 35px;
@@ -31,18 +45,17 @@
   word-spacing: 0.4px;
 }
 
-.author {
-  grid-area: a;
-}
-
 .text {
   grid-area: txt;
-  max-width: 100%;
+  max-width: 100%; 
   max-height: 100%;
   overflow: auto;
   background-color: white;
   padding: 10px;
   border: 1px solid #001f3f;
+  display: block;
+  white-space: normal; 
+  column-count: unset; 
 }
 
 .sidebar {
@@ -59,6 +72,13 @@
   color: blue;
 }
 
+.links{
+  text-align: center;
+}
+
+.about-author{
+  padding-left: 10px;
+}
 
 /*  mobile devices */
 @media (max-width: 768px) {

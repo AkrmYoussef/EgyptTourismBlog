@@ -9,8 +9,14 @@
 }
 .text-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     margin-left: 10px;
+}
+
+.text-container-2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
 }
 
 .name {
