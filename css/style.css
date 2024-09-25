@@ -3,26 +3,25 @@
 @import url("custom.css");
 
 .container {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    grid-template-rows: 7% 15% 55% 10% 13%;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 7% 15% 55% 10% 13%;
+  grid-template-areas:
     "hd hd hd hd hd hd hd hd"
     "t t t t t t t t"
     "sd main main main main main main main"
     "k k k k k k k k"
     "ft ft ft ft ft ft ft ft";
-    grid-gap: 10px;
-    width: 100%;
-    height: 675px;
-    overflow: hidden;
- 
+  grid-gap: 10px;
+  width: 100%;
+  height: 675px;
+  overflow: hidden;
 }
 .title {
   text-align: left;
   font-size: 25px;
   color: whitesmoke;
-  font-family: 'Papyrus', fantasy;
+  font-family: "Papyrus", fantasy;
   width: auto;
   min-height: 10px;
   grid-area: hd;
@@ -31,154 +30,153 @@
 }
 
 .box {
-    display: flex;
-    min-height: 100px;
-    background-color: #001f3f;
+  display: flex;
+  min-height: 100px;
+  background-color: #001f3f;
 }
 
 .header {
-    height: 10px;
-    background-color: whitesmoke;
-    grid-area: t;
-    justify-content: center;
-    font-size: 25px;
-    color: #071952;
-    font-family: 'Papyrus', fantasy;
-    width: auto;
-    padding-bottom: 1fr;
-
+  height: 10px;
+  background-color: whitesmoke;
+  grid-area: t;
+  justify-content: center;
+  font-size: 25px;
+  color: #071952;
+  font-family: "Papyrus", fantasy;
+  width: auto;
+  padding-bottom: 1fr;
 }
 
 .content {
-    grid-area: main;
-    height: 450px;
-    min-width: 600px;
-    line-height: 27px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: whitesmoke;
-
+  grid-area: main;
+  height: 450px;
+  min-width: 600px;
+  line-height: 27px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: whitesmoke;
 }
 
 .sidebar {
-    grid-area: sd;
-    height: 550px;
-    width: 200px ;  
-    background-color: whitesmoke;
-    height: 450px;
-    text-align: left;
-    display: flex;
-    flex-direction: column; /* This makes the links stack vertically */
-    justify-content: flex-start; /* Aligns the content to the top */
-    align-items: flex-start; /* Aligns the links to the left */
-    text-align: left;
-
+  grid-area: sd;
+  height: 550px;
+  width: 200px;
+  background-color: whitesmoke;
+  height: 450px;
+  text-align: left;
+  display: flex;
+  flex-direction: column; /* This makes the links stack vertically */
+  justify-content: flex-start; /* Aligns the content to the top */
+  align-items: flex-start; /* Aligns the links to the left */
+  text-align: left;
 }
 
-.img-post{
-    width: 200px;
-    height: 160px;
-    object-fit: cover;
-    padding-right: 100px;
+.img-post {
+  width: 200px;
+  height: 160px;
+  object-fit: cover;
+  padding-right: 100px;
 }
 
 .footer {
-    grid-area: ft;
-    width: auto;
-    height: 120px;
-    color: white;
-    margin-top: 5px;
-
+  grid-area: ft;
+  width: auto;
+  height: 120px;
+  color: white;
+  margin-top: 5px;
 }
 .figure {
-    border: 1px #cccccc solid;
-    padding: 4px;
-    margin: auto;
-    padding-right: 20px;
-
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+  padding-right: 20px;
 }
 
 .figcaption {
-    font-size: 18px;
-    color: #666666;
-    text-align: center;
+  font-size: 18px;
+  color: #666666;
+  text-align: center;
 }
 
 /* mobile devices) */
 @media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "hd"
-            "t"
-            "main"
-            "sd"
-            "ft";
-        height: auto; 
-        grid-gap: 5px;
-    }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hd"
+      "t"
+      "main"
+      "sd"
+      "ft";
+    height: auto;
+    grid-gap: 5px;
+  }
 
-    .title {
-        font-size: 20px;
-        text-align: center; 
-    }
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
 
-    .header {
-        font-size: 18px;
-        text-align: center;
-    }
+  .header {
+    font-size: 18px;
+    text-align: center;
+  }
 
-    .content {
-        height: auto;
-        min-width: 100%;
-        padding: 10px;
-        line-height: 24px;
-    }
+  .content {
+    height: auto;
+    min-width: 100%;
+    padding: 10px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .sidebar {
-        width: 100%; 
-        height: auto;
-        padding: 10px;
-    }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
 
-    .footer {
-        height: auto;
-        font-size: 14px;
-    }
+  .footer {
+    height: auto;
+    font-size: 14px;
+  }
 }
 
 /*  (tablets) */
 @media (max-width: 1024px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "hd"
-            "t"
-            "main"
-            "sd"
-            "ft";
-        grid-gap: 10px;
-        height: auto;
-    }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hd"
+      "t"
+      "main"
+      "sd"
+      "ft";
+    grid-gap: 10px;
+    height: auto;
+  }
 
-    .title {
-        font-size: 22px;
-    }
+  .title {
+    font-size: 22px;
+  }
 
-    .content {
-        height: auto;
-        min-width: 100%;
-        padding: 20px;
-    }
+  .content {
+    height: auto;
+    min-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .sidebar {
-        width: 100%;
-        padding: 10px;
-    }
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
 
-    .footer {
-        height: auto;
-        font-size: 16px;
-    }
+  .footer {
+    height: auto;
+    font-size: 16px;
+  }
 }
